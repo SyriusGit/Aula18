@@ -22,15 +22,15 @@ function imprimeInformacoes(){
 imprimeInformacoes()
 
 //b)
-function perguntaDados(){
-    let nome = prompt("Digite o seu nome: ")
-    let idade = parseInt(prompt("Digite a sua idade:"))
-    let cidade = prompt("Digite a sua cidade: ")
-    let profissao = prompt("Digite a sua profissão: ")
-    alert(`Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}.`)
+function perguntaDados(nome, idade, cidade, profissao){
+    return`Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}.`
 }
+nomePessoa = prompt("Digite o seu nome: ");
+idadePessoa = parseInt(prompt("Digite a sua idade:"));
+cidadePessoa = prompt("Digite a sua cidade: ");
+profissaoPessoa = prompt("Digite a sua profissão: ");
 
-perguntaDados()
+alert(perguntaDados(nomePessoa, idadePessoa, cidadePessoa, profissaoPessoa))
 
 
 //Exercício escrita 2:
@@ -112,7 +112,7 @@ const imprimeSoma = (imprimir) => {
 num1 = parseFloat(prompt("Insira um número: "))
 num2 = parseFloat(prompt("Insira mais um número: "))
 console.log(imprimeSoma())
-*/
+
 
 function calculaPitagoras(catetoA, catetoB){
     const hipotenusa = Math.sqrt(catetoA ** 2 + catetoB ** 2)
@@ -123,3 +123,4 @@ let catetoB = parseFloat(prompt("Digite o valor do cateto B: "))
 hipotenusa = calculaPitagoras(catetoA, catetoB)
 
 console.log('A hipotenusa é: ' + hipotenusa)
+*/
